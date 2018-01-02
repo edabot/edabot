@@ -1,0 +1,14 @@
+.heading-primary {
+  margin-bottom: 40px;
+  color: white;
+  text-align: center;;
+  &-main {
+    font-size: 60px;
+    display: block;
+  }
+
+  &-sub {
+    font-size: 20px;
+    display: block;
+  }
+}

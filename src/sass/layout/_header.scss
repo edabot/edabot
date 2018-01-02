@@ -1,0 +1,15 @@
+.header {
+  height: 50vh;
+
+  background-image: url(./img/together_we_create.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
