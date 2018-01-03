@@ -6,6 +6,9 @@
     color: rgba($color-gray-dark-1, .6);
     font-size: 60px;
     display: block;
+    @include respond(phone) {
+      color: rgba(white, .8);
+    }
   }
 
   &-sub {
