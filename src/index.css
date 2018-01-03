@@ -21,6 +21,15 @@ body {
   background-size: cover;
   background-position: top;
   position: relative; }
+  @media (max-width: 1200px) {
+    .header {
+      background-image: url(./img/cloud-1200.jpg); } }
+  @media (max-width: 900px) {
+    .header {
+      background-image: url(./img/cloud-900.jpg); } }
+  @media (max-width: 600px) {
+    .header {
+      background-image: url(./img/cloud-600.jpg); } }
   .header__text-box {
     position: absolute;
     top: 50%;
