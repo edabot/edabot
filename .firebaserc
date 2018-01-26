@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "edabot-1d58a",
+    "staging": "edabot-1d58a"
+  }
+}
