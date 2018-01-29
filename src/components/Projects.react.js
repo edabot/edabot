@@ -11,9 +11,20 @@ const Card = styled.div`
   max-width: 600px;
 `
 
+const Skills = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em 0;
+`
+
+const Chip = styled.div`
+  border-radius: 20px;
+  background-color: #eee;
+  padding: .5em 1em;
+  margin-right: .8em;
+`
+
 const Project = ({project}) => (
-
-
     <Card>
       <a href={project.url}>
         <CardMedia overlay={<CardTitle title={project.title} />} >
@@ -22,10 +33,18 @@ const Project = ({project}) => (
       </a>
       <CardText>
         {project.description}
+        <Skills>
+          {project.skills.map(skill => <TechSkill skill={skill} key={skill}/>)}
+        </Skills>
+        <a href={project.github}><FlatButton label="github" /></a>
       </CardText>
-      <a href={project.github}><FlatButton label="github" /></a>
     </Card>
+)
 
+const TechSkill = ({skill}) => (
+  <Chip>
+   {skill}
+  </Chip>
 )
 
 class Projects extends Component {

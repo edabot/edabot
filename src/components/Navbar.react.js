@@ -32,7 +32,7 @@ handleToggle = () => this.setState({drawerOpen: !this.state.drawerOpen});
           onRequestChange={(drawerOpen) => this.setState({drawerOpen})}>
           <MenuItem onClick={this.handleToggle}><Link to="/">Ed Lewis</Link></MenuItem>
           <MenuItem onClick={this.handleToggle}><Link to="/about">About</Link></MenuItem>
-          {projects.map(project => <ProjectLink project={project} />)}
+          {projects.map(project => <ProjectLink project={project} key={project.title}/>)}
         </Drawer>
       </div>
     )
