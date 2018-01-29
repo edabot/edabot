@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {CardMedia, CardTitle, CardText} from 'material-ui/Card'
+import FlatButton from 'material-ui/FlatButton';
 import styled from 'styled-components'
 import projects from '../data/projects'
 
@@ -12,16 +13,19 @@ const Card = styled.div`
 
 const Project = ({project}) => (
 
-  <a href={project.url}>
+
     <Card>
-      <CardMedia overlay={<CardTitle title={project.title} />} >
-        <img src={project.img} alt="" />
-      </CardMedia>
+      <a href={project.url}>
+        <CardMedia overlay={<CardTitle title={project.title} />} >
+          <img src={project.img} alt="" />
+        </CardMedia>
+      </a>
       <CardText>
         {project.description}
       </CardText>
+      <a href={project.github}><FlatButton label="github" /></a>
     </Card>
-  </a>
+
 )
 
 class Projects extends Component {
