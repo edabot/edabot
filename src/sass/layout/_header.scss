@@ -1,20 +1,5 @@
 .header {
-  height: 50vh;
 
-  background-image: url(./img/cloud.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-
-  @include respond(tab-land) {
-    background-image: url(./img/cloud-1200.jpg);
-  }
-  @include respond(tab-port) {
-    background-image: url(./img/cloud-900.jpg);
-  }
-  @include respond(phone) {
-    background-image: url(./img/cloud-600.jpg);
-  }
 
   &__text-box {
     position: absolute;
