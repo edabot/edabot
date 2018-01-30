@@ -4,9 +4,9 @@ import journal from '../img/journal.jpg'
 
 const SiteHeader = styled.div`
   display: grid;
-  grid-template-rows: 1fr minmax(100px, 400px) auto 1fr;
+  grid-template-rows: 1fr minmax(100px, 250px) auto 1fr;
   justify-items: center;
-  height: 60vh;
+  height: 70vh;
 `
 
 const HeaderImage = styled.img`

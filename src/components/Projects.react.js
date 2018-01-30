@@ -3,6 +3,7 @@ import {CardMedia, CardTitle, CardText} from 'material-ui/Card'
 import FlatButton from 'material-ui/FlatButton';
 import styled from 'styled-components'
 import projects from '../data/projects'
+import Header from './Header.react';
 
 const Card = styled.div`
   border: 1px solid lightgray;
@@ -51,6 +52,8 @@ class Projects extends Component {
   render() {
     return (
       <div>
+        <Header />
+
         {projects.map(project=><Project key={project.title} project={project} />)}
       </div>
     )
